@@ -4,41 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách sản phẩm</title>
+    <title>Lịch họp công ty</title>
 </head>
 
 <body>
 
-    <h1>Danh sách sản phẩm</h1>
+    <h1>Lịch họp công ty</h1>
 
     <table border="1">
         <thead>
             <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>iPhone 15 Pro Max</td>
-                <td>29.990.000 VNĐ</td>
-                <td>15</td>
+                <!-- Gộp 2 hàng của cột Ngày cho Thứ Hai -->
+                <td rowspan="2">Thứ Hai</td>
+                <td>08:30 - 10:00</td>
+                <td>Họp giao ban đầu tuần</td>
             </tr>
             <tr>
-                <td>Laptop Dell XPS 13</td>
-                <td>35.500.000 VNĐ</td>
-                <td>8</td>
+                <td>10:30 - 12:00</td>
+                <td>Họp phòng Kinh doanh</td>
             </tr>
             <tr>
-                <td>Tai nghe AirPods Pro 2</td>
-                <td>5.990.000 VNĐ</td>
-                <td>25</td>
+                <!-- Gộp 2 hàng của cột Ngày cho Thứ Ba -->
+                <td rowspan="2">Thứ Ba</td>
+                <td>09:00 - 11:00</td>
+                <td>Họp triển khai dự án mới</td>
             </tr>
             <tr>
-                <td>Bàn phím cơ Logitech MX Keys</td>
-                <td>3.200.000 VNĐ</td>
-                <td>10</td>
+                <td>14:00 - 16:00</td>
+                <td>Đào tạo nhân viên mới</td>
+            </tr>
+            <tr>
+                <td>Thứ Tư</td>
+                <!-- Sử dụng colspan gộp 2 cột Giờ và Nội dung khi họp kéo dài cả ngày -->
+                <td colspan="2">Hội thảo Chiến lược & Tổng kết Quý (Cả ngày: 08:00 - 17:00)</td>
             </tr>
         </tbody>
     </table>
